@@ -9,7 +9,7 @@ from unittest.mock import patch, mock_open
     ['else.txt', 'SOMETHING ELSE'],
 ])
 def test_hello_reader_with_files(input_filename: str, expected_output: str) -> None:
-    FIXUP_PATH = os.path.join(os.getcwd(), '..', 'fixups')
+    FIXUP_PATH = os.path.join(os.getcwd(), 'fixups')
 
     hello_reader = HelloReader(os.path.join(FIXUP_PATH, input_filename))
     output_value = hello_reader.reading_hello()

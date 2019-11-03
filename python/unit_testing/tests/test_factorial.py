@@ -12,7 +12,6 @@ from unit_testing.sut.factorial import factorial
     [5, 120],
 ])
 def test_factorial(input_value: int, expected_factorial_value: int) -> None:
-    print('DEBUG!!!!!!!!!!!!')
     output_value = factorial(input_value)
 
     assert output_value == expected_factorial_value
